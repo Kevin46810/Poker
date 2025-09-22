@@ -769,20 +769,7 @@ class Tiebreaker:
         cardSublists.append(sublist)
     
     return cardSublists
-  
-  #Makes a new list of EqualHand objects  
-  def createNewList(self, tiedList, tiedSublists, newList, tiesBroken):
     
-    maxSize = len(tiedSublists)
-    
-    for i in range(maxSize):
-      if i == tiedList[i].rank:
-        newList.append(tiedList[i])
-        maxSize += 1
-        
-      else:  
-        newList.append(tiedSublists[i])
-  
   #Checks and see if the hand is 2, 3, 4, 5, Ace     
   def isAceLowStraight(self, hand):
       
